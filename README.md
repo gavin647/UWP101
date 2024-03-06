@@ -20,9 +20,13 @@ This project is a program implemented in Go. It will parse and evalueate a subse
 ### MiniLisp
 This project only parses a subset of Lisp, and its grammar is as follows:
 > \<sexpr\> ::= \<atom\> | \<pars\> | QUOTE \<sexpr\>
+> 
 > \<atom\> ::= NUMBER | SYMBOL
+> 
 > \<pars\> ::= LPAR \<dotted_list\> RPAR | LPAR \<proper_list\> RPAR
+> 
 > \<dotted_list\> ::= \<proper_list\> \<sexpr\> DOT \<sexpr\>
+> 
 > \<proper_list\> ::= \<sexpr\> \<proper_list\> | \epsilon
 
 ### Usage
