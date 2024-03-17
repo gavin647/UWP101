@@ -42,7 +42,8 @@ The parser is a type Parser interface and it has a Parser() function which takes
 - Functions will be processed and stores the result as another SExpr object.
 - A condition function evaluates to symbol **True** or a **Nil Object** representing false.
 
-### MiniLisp
+## MiniLisp
+### Grammar
 This project only parses a subset of Lisp, and its grammar is as follows:
 > \<sexpr\> ::= \<atom\> | \<pars\> | QUOTE \<sexpr\>
 > 
@@ -53,7 +54,7 @@ This project only parses a subset of Lisp, and its grammar is as follows:
 > \<dotted_list\> ::= \<proper_list\> \<sexpr\> DOT \<sexpr\>
 > 
 > \<proper_list\> ::= \<sexpr\> \<proper_list\> | \epsilon
-
+### Functions
 The functions supported are:
 1. Quote
 2. Basic functions
@@ -69,4 +70,7 @@ The functions supported are:
    - \+
    - \*
    - \-
+
+## Note on Version
+This project requires Go version above or equal to 1.17.
 
