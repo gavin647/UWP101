@@ -33,7 +33,7 @@ The parser is a type Parser interface and it has a Parser() function which takes
   ```
 - A SExpr object can either be
   1. An **Atom**
-  2. A list, with its **car** points to the head, and its **cdr** points to the rest of the body as another list.
+  2. A list, with its **car** points to the head, and its **cdr** points to another object representing rest of the list.
 - The SExpr instance can be **evaluated** by calling the eval() function.
 
 ### Evaluation
