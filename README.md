@@ -66,7 +66,7 @@ The functions supported are:
    - zerop
    - nump
 4. Mathematical operations
-   - +
-   - *
-   - -
+   - \+
+   - \*
+   - \-
 
