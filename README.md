@@ -38,7 +38,7 @@ The parser is a type Parser interface and it has a Parser() function which takes
 
 ### Evaluation
 - If the instance cannot be evaluated, e.g: a list with its **car** not an function or a function with invalid number of arguments, it throws an error.
-- An **ATOM** evaluats to itself.
+- An **ATOM** evaluates to itself.
 - Functions will be processed and stores the result as another SExpr object.
 - A condition function evaluates to symbol **True** or a **Nil Object** representing false.
 
